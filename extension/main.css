@@ -1,0 +1,36 @@
+.pe__root {
+    position: fixed;
+    bottom: 18px;
+    right: 26px;
+    width: 400px;
+    z-index: 99999999;
+}
+
+.pe__title {
+    color: #eaeaea;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 27px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.pe__name {
+    color: #ffd31b;
+}
+
+.pe__content {
+    color: #eaeaea;
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pe__message {
+    transition: opacity 1s ease-in;
+    margin-top: 23px;
+}
+
+.pe__message.disappearing {
+    opacity: 0;
+}

@@ -1,0 +1,218 @@
+.MainForm {
+    
+}
+
+.MainFormTextContainer {
+    background-color: #eaeaea;
+    overflow: hidden;
+}
+
+.MainForm textarea {
+    border: 0;
+    background-color: transparent;
+    resize: none;    
+    outline: none;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 0.6rem 0.9rem;
+    color: #2c2c2c;
+    height: 15rem;
+    width: calc(100% - 1.8rem);
+}
+
+.CharCounter {
+    position: absolute;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    transform: translateY(-2rem);
+    color: #616161;
+    background-color: #eaeaeaab;
+    right: calc(50vw - 375px + 10px);
+}
+
+@media (max-width: 750px) {
+    .CharCounter {
+        right: 10px;
+    }
+}
+
+.MainFormUI {
+    display: flex;
+    justify-content: space-between;
+    height: 2.7rem;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+.MainFormConfirm {
+    background-color: #fc0;
+    color: #353535;
+    height: 100%;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.MainFormConfirm:active {
+    background-color: #f0c000;
+}
+
+.MainFormVoice {
+    display: flex;
+    margin: 0 18px 0 auto;
+}
+
+.VoiceCheckbox {
+    height: 1rem;
+    width: 1rem;
+    border: #bdbdbd solid 2px;
+}
+
+.VoiceCheckbox.checked {
+    background-color: #fc0;
+    border: #fc0 2px solid;
+}
+
+.VoiceLabel {
+    margin-left: 0.5rem;
+}
+
+.MainFormName {
+    width: 100%;
+    height: 100%;
+}
+
+.MainFormName input {
+    width: calc(100% - 20px);
+    line-height: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: #f1f1f1;
+    padding: 0 10px;
+    font-size: 1.5rem;
+    color: #353535;
+}
+
+.Notification {
+    position: fixed;
+    min-height: 60px;
+    width: 100%;
+    transition: transform ease-out 0.15s;
+    transform: translateY(-100%);
+    background-color: #f5f5f5e8;
+    padding: 15px 20px;
+    overflow: hidden;
+}
+
+.Notification.shown {
+    transform: initial;
+}
+
+@media (min-width: 750px) {
+    .Notification {
+        transform: translateY(calc(-100% - 20px));
+        width: 710px;
+    }
+
+    .Notification.shown {
+        transform: initial;
+    }
+}
+
+.NotificationHeader {
+    display: flex;
+}
+
+.NotificationIcon {
+    background-color: #f7c600;
+    border-radius: 12px;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NotificationIcon img {
+    height: 20px;
+    width: 20px;
+}
+
+.NotificationTitle {
+    color: #fc0;
+    font-size: 1.2rem;
+    margin-left: 9px;
+    line-height: 24px;
+}
+
+.NotificationText {
+    margin-top: 6px;
+    width: calc(100% - 40px);
+}
+
+.BigOverlay {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BigOverlay>* {
+    transform: translateY(-40px);
+}
+
+svg path,
+svg rect{
+  fill: #fc0;
+}
+
+.BigOverlayBody {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.17);
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+}
+
+.BigOverlayItem {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    user-select: none;
+}
+
+.BigOverlayItem:active {
+    background-color: #eaeaea;
+}
+
+.BigOverlayItem img {
+    margin-top: 28px;
+}
+
+.BigOverlayItem div {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+.BigOverlayItem span {
+    color: red;
+}
+
+.BigOverlaySeparator {
+    height: 100px;
+    width: 1px;
+}
+
+.BigOverlaySeparator div {
+    background-color: #c7c7c7;
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+}
